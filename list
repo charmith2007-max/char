@@ -1,0 +1,102 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN7MhT6rrjGVtQsysG57thh",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/charmith2007-max/char/blob/main/list\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 29,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YLYb8cbZwL12",
+        "outputId": "9ed7707a-c5cf-4961-98f5-e78c92a71046"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "4\n",
+            "[1, 2, 3, 4]\n",
+            "[50, 2, 3, 4]\n",
+            "[2, 3, 4]\n",
+            "[2, 3, 4, 'orange']\n"
+          ]
+        }
+      ],
+      "source": [
+        "list=[1,2,3,4]\n",
+        "for i in list:\n",
+        "   print(i)\n",
+        "print(len(list))\n",
+        "print(list)\n",
+        "list.insert(1,50)\n",
+        "print(list[1:5])\n",
+        "list.remove(50)\n",
+        "print(list[1:4])\n",
+        "list.append(\"orange\")\n",
+        "print(list[1:5])"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n=int(input(\"enter the size of the list:\"))\n",
+        "list=[]\n",
+        "for i in range(n):\n",
+        "   list.append(int(input()))\n",
+        "print(list)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "FfK5CTPw119Y",
+        "outputId": "8648a31e-2c39-48f7-9383-54d552fa20b2"
+      },
+      "execution_count": 38,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the size of the list:3\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "[1, 2, 3]\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
